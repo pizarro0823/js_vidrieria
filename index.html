@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+<!--link bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Despiece</title>
+  </head>
+  <body>
+<div class="container">
+<div class="container text-center py-5">
+<h1>Despiece ventanas 7-44</h1>
+  </div>
+
+<div class="container text-center py-1">
+
+<!-- <form id="frm1" accept-charset="ISO-8859-1"> -->
+Base :  <input id="base" type="text" aria-label="base" class="form-control"><br>
+Altura :  <input id="altura" type="text" aria-label="altura" class="form-control"><br>
+  <button type="button" value="operaciones" onclick="operaciones()" class="btn btn-success">Calcular</button>
+
+
+<!-- </form> -->
+</div>
+
+<div class="container">
+<table id="myTable">
+
+  <tr>
+    <td>Material___________</td>
+    <td>Medidas___________</td>
+    <td>cantidad___________</td>
+  </tr>
+  <tr>
+    <td>Cabesal</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+  <td>Sillar</td>
+  <td>0</td>
+  <td>1</td>
+  </tr>
+  <tr>
+    <td>Jamba</td>
+    <td>0</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Traslape</td>
+    <td>0</td>
+    <td>2</td>
+  </tr>
+  <tr>
+      <td>Enganche</td>
+      <td>0</td>
+      <td>2</td>
+  </tr>
+  <tr>
+    <td>Socalo Superior</td>
+    <td>0</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Socalo Inferior</td>
+    <td>0</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Vidrio Altura</td>
+      <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Vidrio Base</td>
+      <td>0</td>
+    <td>0</td>
+  </tr>
+</table>
+</div>
+
+
+<script>
+  function operaciones()
+  {
+    var nume1=Number(document.getElementById('base').value);
+    var nume2=Number(document.getElementById('altura').value);
+    var base = nume1;
+    var altura = nume1;
+    var jamba = nume2-1.1;
+    var traslape = nume1-2.2;
+    var socalos =nume1/2-0.2;
+    var vidrioBase = nume2-2.2-7.1;
+    var vidrioAltura =(nume1/2)-0.2-5.3;
+
+
+
+    var x = document.getElementById("myTable").rows[1].cells;
+    x[1].innerHTML = base.toFixed(1);
+    var x = document.getElementById("myTable").rows[2].cells;
+    x[1].innerHTML = base.toFixed(1);
+    var x = document.getElementById("myTable").rows[3].cells;
+    x[1].innerHTML = jamba.toFixed(1);
+    var x = document.getElementById("myTable").rows[4].cells;
+    x[1].innerHTML = traslape.toFixed(1);
+    var x = document.getElementById("myTable").rows[5].cells;
+    x[1].innerHTML = traslape.toFixed(1);
+    var x = document.getElementById("myTable").rows[6].cells;
+    x[1].innerHTML = socalos.toFixed(1);
+    var x = document.getElementById("myTable").rows[7].cells;
+    x[1].innerHTML = socalos.toFixed(1);
+    var x = document.getElementById("myTable").rows[8].cells;
+    x[1].innerHTML = vidrioBase.toFixed(1);
+    var x = document.getElementById("myTable").rows[9].cells;
+    x[1].innerHTML = vidrioAltura.toFixed(1);
+
+
+
+
+  }
+
+
+
+</script>
+</div>
+  </body>
+</html>
