@@ -58,22 +58,17 @@ Altura :  <input id="altura" type="text" aria-label="altura" class="form-control
       <td>2</td>
   </tr>
   <tr>
-    <td>Socalo Superior</td>
+    <td>Socalos</td>
     <td>0</td>
     <td>2</td>
   </tr>
-  <tr>
-    <td>Socalo Inferior</td>
-    <td>0</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>Vidrio Altura</td>
+
+    <td>Vidrio Base</td>
       <td>0</td>
     <td>0</td>
   </tr>
   <tr>
-    <td>Vidrio Base</td>
+    <td>Vidrio Altura</td>
       <td>0</td>
     <td>0</td>
   </tr>
@@ -84,15 +79,15 @@ Altura :  <input id="altura" type="text" aria-label="altura" class="form-control
 <script>
   function operaciones()
   {
-    var nume1=Number(document.getElementById('base').value);
-    var nume2=Number(document.getElementById('altura').value);
-    var base = nume1;
-    var altura = nume1;
-    var jamba = nume2-1.1;
-    var traslape = nume1-2.2;
-    var socalos =nume1/2-0.2;
-    var vidrioBase = nume2-2.2-7.1;
-    var vidrioAltura =(nume1/2)-0.2-5.3;
+    var inpBase=Number(document.getElementById('base').value);
+    var inpAltura=Number(document.getElementById('altura').value);
+    var base = inpBase;
+    var altura = inpBase;
+    var jamba = inpAltura-1.6;
+    var traslape = inpBase-6.3;
+    var socalos =inpBase/2-1.5;
+    var vidrioAltura = inpAltura-9.3;
+    var vidrioBase =inpBase/2-3.45;
 
 
 
@@ -109,10 +104,8 @@ Altura :  <input id="altura" type="text" aria-label="altura" class="form-control
     var x = document.getElementById("myTable").rows[6].cells;
     x[1].innerHTML = socalos.toFixed(1);
     var x = document.getElementById("myTable").rows[7].cells;
-    x[1].innerHTML = socalos.toFixed(1);
-    var x = document.getElementById("myTable").rows[8].cells;
     x[1].innerHTML = vidrioBase.toFixed(1);
-    var x = document.getElementById("myTable").rows[9].cells;
+    var x = document.getElementById("myTable").rows[8].cells;
     x[1].innerHTML = vidrioAltura.toFixed(1);
 
 
@@ -126,3 +119,4 @@ Altura :  <input id="altura" type="text" aria-label="altura" class="form-control
 </div>
   </body>
 </html>
+
