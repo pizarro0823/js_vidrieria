@@ -48,7 +48,13 @@ function operaciones()
 }
 
 function agregarFila(){
-  document.getElementById("myTable").insertRow(-1).innerHTML = '<td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>';
+  if (document.getElementById('btn_agregarFla').onclick){
+    alert("desea agrgar nueva ventana")
+    document.getElementById('base').value="";
+    document.getElementById('altura').value="";
+    document.getElementById("myTable").insertRow(1).innerHTML = '<td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>';
+    operaciones();
+  }
 }
 
 function eliminarFila(){
