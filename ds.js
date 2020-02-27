@@ -13,7 +13,7 @@
    var nvtn =document.getElementById("n_v".value);
 
 
-  //base
+  //baseeeeeeeeeeeeee
     var x = document.getElementById("myTable").rows[1].cells;
     x[1].innerHTML = base_x.toFixed(2);
   //  altura
@@ -81,3 +81,4 @@
       window.location.href = uri + base64(format(template, ctx))
     }
   })()
+
