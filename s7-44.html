@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+<!--link bootstrap-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Despiece 7-44v1</title>
+  </head>
+  <body>
+    <!--link menu poper-->
+    <div class="container">
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Costos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">50-20</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">7-44</a>
+          </li>
+
+
+        </ul>
+      </div>
+
+<!--link titulo-->
+<div class="container">
+<div class="container text-center py-5">
+<h1>Despiece ventanas 7-44</h1>
+  </div>
+
+
+<!--link texbox-->
+<div class="container text-center py-1">
+
+Base :  <input  id="base" type="text" aria-label="base" class="form-control"><br>
+Altura :<input  id="altura" type="text" aria-label="altura" class="form-control"><br>
+
+
+<button type="button" value="operaciones" onclick="operaciones()" class="btn btn-success">Calcular</button>
+<button id="btn_agregarFla" type="button" onclick="agregarFila()" class="btn btn-secondary">agregar_Fila</button>
+<button type="button" onclick="eliminarFila()" class="btn btn-danger">Eliminar</button>
+<button type="button" onclick="exportTableToExcel('myTable', 'ventanas 50-20')" class="btn btn-info">Exportar_Excel</button>
+
+<script src="sistema_7-44.js"></script>
+</div>
+
+
+<!--link tabla-->
+<div class="container">
+<table class="table table-bordered" id="myTable">
+  <thead>
+    <tr>
+
+      <th scope="col">#</th>
+      <th scope="col">Base</th>
+      <th scope="col">Altura</th>
+      <th scope="col">Cabezal</th>
+      <th scope="col">Sillar</th>
+      <th scope="col">Jamba</th>
+      <th scope="col">Traslape</th>
+      <th scope="col">Enganche</th>
+      <th scope="col">Zocalos</th>
+      <th scope="col" colspan="2"> Vidrio B--A</th>
+      <th scope="col">Empaque/m²</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>
+</div>
+  </body>
+</html>
