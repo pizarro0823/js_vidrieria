@@ -1,7 +1,7 @@
   function operaciones()
   {
-    var inpBase=Number(document.getElementById('base').value);
-    var inpAltura=Number(document.getElementById('altura').value);
+    var inpBase=Number(document.getElementById('base').value.replace(",","."));
+    var inpAltura=Number(document.getElementById('altura').value.replace(",","."));
     var base_x = inpBase;
     var altura_x = inpAltura;
     var jamba_x = inpAltura-1.6;
