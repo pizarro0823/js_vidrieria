@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Costos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body onload="calculuar()">
+
+   <!--link menu poper-->
+   <div class="container">
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Costos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">50-20</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">7-44</a>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1>Costos</h1>
+    <div class="row">
+
+      <div class="col-md-2 order-md-1">
+        Base: <input type="text" id="inpbase" aria-label="First name" class="form-control">
+        Altura: <input type="text" id="inpaltura" aria-label="Last name" class="form-control">
+        <p></p>
+        <button type="button" class="btn btn-success" onclick="costos()">Calcular</button>
+        <p></p>
+      </div>
+      <script src="costos.js"></script>
+
+      <div class="col-md-8 order-md-1">
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <!--tablas-->
+  <div class="container">
+    <div class="row">
+      <!--tabla de precios-->
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Precios por tira</span>
+
+        </h4>
+        <ul class="list-group mb-3" id="tabla">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Cabezal</h6>
+            </div>
+            <span class="text-muted" id="spanCabezal">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Sillar</h6>
+
+            </div>
+            <span class="text-muted" id="spanSillar">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Jamba</h6>
+            </div>
+            <span class="text-muted" id="spanJamba">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6 class="my-0">Enganche</h6>
+            <span class="text-muted" id="spanEnganche">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6 class="my-0">Traslape</h6>
+            <span class="text-muted" id="spanTraslape">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6 class="my-0">Socalos</h6>
+            <span class="text-muted" id="spanSocalos">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6 class="my-0">Rodamientos</h6>
+            <span class="text-muted" id="spanRodamientos">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6 class="my-0">Guias</h6>
+            <span class="text-muted" id="spanGuias">$0</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6 class="my-0">Empaque</h6>
+            <span class="text-muted" id="spanEmpaque">$0</span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <h6>Vidrio</h6>
+            <span>$20</span>
+          </li>
+        </ul>
+
+       
+      </div>
+
+      <!--tabla donde left-->
+      <div class="col-md-8 order-md-1">
+        <table class=" table table-bordered" id="mytabla1">
+          <thead>
+            <tr>
+              <th scope="col">Material</th>
+              <th scope="col">Medida</th>
+              <th scope="col">Precio por Mt</th>
+              <th scope="col">Observaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cabezal</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Sillar</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Jamba</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Enganche</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Traslape</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Socalos</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Rodamientos</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Guias</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Empaque</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">Vidrio</th>
+              <td>0</td>
+              <td>0</td>
+              <td>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row" colspan="2" style="background-color: tomato; color:white ;">COSTO</th>
+              <td style="color: red; font-size: x-large;" >$</td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+
+              <th scope="row" colspan="2">%</th>
+              <td style="color:coral;font-size: x-large;" >$ </td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="2">Precio Venta</th>
+              <td style="color: green;font-size: x-large;">$</td>
+            </tr>
+
+            </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
