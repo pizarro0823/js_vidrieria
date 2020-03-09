@@ -7,8 +7,8 @@ var socalos = 30000;
 var rodamientos = 800;
 var guias = 200;
 var empaque = 5000;
-var inpbase = Number(document.getElementById('inpbase').value.replace(",", "."));
-var inpaltura = Number(document.getElementById('inpaltura').value.replace(",", "."));
+var inpbase = Number(document.getElementById('inpbase').value.replace(",","."));
+var inpaltura = Number(document.getElementById('inpaltura').value.replace(",","."));
 
 
 function calculuar() {
