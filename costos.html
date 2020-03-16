@@ -6,6 +6,7 @@
   <title>Costos</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
 
 </head>
 
@@ -32,12 +33,13 @@
   <div class="container">
     <h1>Costos</h1>
     <div class="row">
-
-      <div class="col-md-2 order-md-1">
+     
+      <div class="col-md-3 order-md-1">
         Base: <input type="text" id="inpbase" aria-label="First name" class="form-control">
         Altura: <input type="text" id="inpaltura" aria-label="Last name" class="form-control">
         <p></p>
-        <button type="button" class="btn btn-success" onclick="costos()">Calcular</button>
+        <button type="button" class="btn btn-success" onclick="costos()" >Calcular</button>
+    <!--    <button type="button" class="btn btn-warning" onclick="limpiar()" >Limpiar</button>-->
         <p></p>
       </div>
       <script src="costos.js"></script>
@@ -123,7 +125,6 @@
               <th scope="col">Material</th>
               <th scope="col">Medida</th>
               <th scope="col">Precio por Mt</th>
-              <th scope="col">Observaciones</th>
             </tr>
           </thead>
           <tbody>
@@ -131,11 +132,9 @@
               <th scope="row">Cabezal</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
             </tr>
             <tr>
               <th scope="row">Sillar</th>
-              <td>0</td>
               <td>0</td>
               <td>0</td>
             </tr>
@@ -143,11 +142,9 @@
               <th scope="row">Jamba</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
             </tr>
             <tr>
               <th scope="row">Enganche</th>
-              <td>0</td>
               <td>0</td>
               <td>0</td>
             </tr>
@@ -155,11 +152,9 @@
               <th scope="row">Traslape</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
             </tr>
             <tr>
               <th scope="row">Socalos</th>
-              <td>0</td>
               <td>0</td>
               <td>0</td>
             </tr>
@@ -167,11 +162,9 @@
               <th scope="row">Rodamientos</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
             </tr>
             <tr>
               <th scope="row">Guias</th>
-              <td>0</td>
               <td>0</td>
               <td>0</td>
             </tr>
@@ -179,21 +172,16 @@
               <th scope="row">Empaque</th>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
             </tr>
             <tr>
               <th scope="row">Vidrio</th>
               <td>0</td>
               <td>0</td>
-              <td>
-              </td>
             </tr>
 
             <tr>
-              <th scope="row" colspan="2" style="background-color: tomato; color:white ;">COSTO</th>
+              <th scope="row" colspan="2" ">COSTO</th>
               <td style="color: red; font-size: x-large;" >$</td>
-              <td>
-              </td>
             </tr>
             <tr>
 
